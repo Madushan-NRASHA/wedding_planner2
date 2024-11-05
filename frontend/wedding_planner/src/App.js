@@ -12,7 +12,7 @@ function App() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/">About-us</Link></li>
         <li><Link to="/">Portfolio</Link></li>
-        <li><Link to="/">Contact-us</Link></li>
+        <li><Link to="/">Contact-us1</Link></li>
       </ul>
     </div>
     </div>
