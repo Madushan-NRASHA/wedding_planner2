@@ -25,11 +25,11 @@ nav  {
 
 .nav li a {
   text-decoration: none;
-  color: #fff; /* Adjust the color to your preference */
+  color: #a10000; /* Adjust the color to your preference */
 }
 
 .nav li a:hover {
   text-decoration: none; /* Ensure underline is removed on hover */
   color: #00bfff; /* Adjust the hover color to your preference */
- font-size: 10px;
+
 }

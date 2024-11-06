@@ -2,12 +2,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/homePage';
-// import Profile from './pages/myWork';
-// import About from './pages/about_us';
-// import AdminAcc from './Admin_Acc/adminSettings_Acc';
-// import AddNew_data from './Add_data/addNew_data';
-// import ShowData from './ShowAdmin_data/showAdminData';
-// import Contact_us from './Contactus/contactus';
+import About from './pages/About';
+import Works from './pages/Works';
 
 const TextBox = () => (
   <div className="textBox">
@@ -36,21 +32,15 @@ function App() {
           <h1><span>Wedding</span>Hub</h1>
           <ul className='nav'>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">About</Link></li> {/* Change Link to /about */}
             <li><Link to="/profile">My Works</Link></li>
           </ul>
         </div>
 
-       
-        
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/userAcc" element={<AdminAcc />} />
-          <Route path="/Add_project" element={<AddNew_data />} />
-          <Route path="/Show_projects" element={<ShowData />} />
-          <Route path="/contact-us" element={<Contact_us />} /> */}
+          <Route path="/" element={<Home />} /> {/* Home page at root */}
+          <Route path="/about" element={<About />} /> {/* About page at /about */}
+          <Route path="/profile" element={<Works/>} />
         </Routes>
       </div>
     </BrowserRouter>
